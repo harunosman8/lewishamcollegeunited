@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club - One Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#news">Daily News</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section-box">
+        <h1>Welcome to the Football Club</h1>
+        <p>We are your go-to destination for everything football! Get all the details about our upcoming matches, club history, store, and more!</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-box">
+        <h2>About Us</h2>
+        <p>Founded in 1990, our football club has been a pioneer in the local sports community, offering world-class training and competitive matches. We believe in teamwork, dedication, and fostering young talent. Our vision is to create a nurturing environment for future football stars.</p>
+        <h3>Our Values:</h3>
+        <ul>
+            <li>Integrity and Fair Play</li>
+            <li>Passion for Excellence</li>
+            <li>Building Stronger Communities</li>
+        </ul>
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches" class="section-box">
+        <h2>Upcoming Matches</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Opponent</th>
+                <th>Location</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>June 5, 2025</td>
+                <td>Team A</td>
+                <td>Stadium 1</td>
+                <td>5:00 PM</td>
+            </tr>
+            <tr>
+                <td>June 12, 2025</td>
+                <td>Team B</td>
+                <td>Stadium 2</td>
+                <td>7:00 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section-box">
+        <h2>Our History</h2>
+        <p>We’ve come a long way since our founding in 1990. The club has experienced numerous championships, player developments, and incredible moments. Below are some of our key achievements:</p>
+        <h3>Key Achievements:</h3>
+        <ul>
+            <li>1995: Regional Championship Victory</li>
+            <li>2000: National League Promotion</li>
+            <li>2010: Top 5 Nationally Ranked</li>
+            <li>2015: Global Recognition for Youth Development</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section-box">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="section-box">
+        <h2>Club Store</h2>
+        <p>Get your official kit and merchandise! Check out our store below.</p>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400?text=Home+Kit" alt="Home Kit">
+            <p>Home Kit - $50</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400?text=Away+Kit" alt="Away Kit">
+            <p>Away Kit - $55</p>
+        </div>
+    </section>
+
+    <!-- Daily News Section -->
+    <section id="news" class="section-box">
+        <h2>Daily News</h2>
+        <p>Stay updated with the latest news from our club. Here are some headlines:</p>
+        <div class="news-article">
+            <h3>New Sponsorship Deal Announced</h3>
+            <p>Our club has secured a new sponsorship deal with XYZ Corporation, helping fund new player acquisitions.</p>
+        </div>
+        <div class="news-article">
+            <h3>Training Camps Begin in June</h3>
+            <p>Our summer training camps are now open for registration! Join us for the ultimate football experience.</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="section-box">
+        <h2>Search</h2>
+        <input type="text" id="search-input" placeholder="Search for a section...">
+        <button onclick="searchSection()">Search</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Football Club | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

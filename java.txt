@@ -1,0 +1,14 @@
+// Scroll to specific sections based on search input
+function searchSection() {
+    var searchQuery = document.getElementById('search-input').value.toLowerCase();
+    var sections = document.querySelectorAll('section');
+    
+    for (var i = 0; i < sections.length; i++) {
+        var sectionId = sections[i].id.toLowerCase();
+        if (sectionId.includes(searchQuery)) {
+            document.getElementById(sectionId).scrollIntoView({behavior: "smooth"});
+            return;
+        }
+    }
+    alert("Section not found.");
+}
